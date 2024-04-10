@@ -2,7 +2,7 @@
 apiVersion: shifu.edgenesis.io/v1alpha1
 kind: TelemetryService
 metadata:
-  name: push-endpoint-1
+  name: push-endpoint
   namespace: devices
 spec:
   telemetryServiceEndpoint: http://telemetryservice.shifu-service.svc.cluster.local
