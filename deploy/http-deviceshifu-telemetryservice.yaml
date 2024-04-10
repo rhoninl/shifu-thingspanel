@@ -1,0 +1,13 @@
+--- #telemetry_service.yaml
+apiVersion: shifu.edgenesis.io/v1alpha1
+kind: TelemetryService
+metadata:
+  name: push-endpoint-1
+  namespace: devices
+spec:
+  telemetryServiceEndpoint: http://telemetryservice.shifu-service.svc.cluster.local
+  serviceSettings:
+    MQTTSetting:
+      MQTTServerAddress: 192.168.0.1:1883 # edit it to your your IP
+      MQTTTopic: device/attributes
+      MQTTServerSecret: device1

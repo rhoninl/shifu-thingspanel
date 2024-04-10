@@ -1,0 +1,93 @@
+{
+  "info": {
+    "pluginCategory": "1",
+    "pluginName": "Shifu_Thermohygrometer"
+  },
+  "tsl": {
+    "properties": [
+      {
+        "dataType": "float",
+        "dataRange": "0-999",
+        "stepLength": 0.1,
+        "readWrite": "r",
+        "_id": "R63x9X9P",
+        "title": "温度",
+        "name": "temperature",
+        "unit": "℃"
+      },
+      {
+        "dataType": "float",
+        "dataRange": "0-999",
+        "stepLength": 0.1,
+        "readWrite": "r",
+        "_id": "ZFxMqqqv",
+        "title": "湿度",
+        "name": "humidity",
+        "unit": "%"
+      }
+    ],
+    "option": {
+      "classify": "custom",
+      "catValue": ""
+    }
+  },
+  "chart": [
+    {
+      "grid": {
+        "left": "20",
+        "right": "20",
+        "top": "20",
+        "bottom": "20",
+        "containLabel": true
+      },
+      "legend": {},
+      "xAxis": {
+        "type": "category",
+        "axisLine": {
+          "lineStyle": {
+            "color": "#fff"
+          }
+        },
+        "data": [""]
+      },
+      "dataZoom": [
+        {
+          "type": "inside",
+          "start": 0,
+          "end": 100
+        },
+        {
+          "start": 0,
+          "end": 100
+        }
+      ],
+      "yAxis": {
+        "type": "value",
+        "axisLine": {
+          "lineStyle": {
+            "color": "#fff"
+          }
+        }
+      },
+      "series": [
+        {
+          "data": [0],
+          "type": "line",
+          "name": "温度"
+        },
+        {
+          "data": [0],
+          "type": "line",
+          "name": "湿度"
+        }
+      ],
+      "name": "温湿度折线图",
+      "mapping": ["temperature", "humidity"],
+      "controlType": "history",
+      "id": "jPfGzEHxwOHS"
+    }
+  ],
+  "publish": {
+    "isPus": true
+  }
+}
